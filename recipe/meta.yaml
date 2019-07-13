@@ -1,5 +1,5 @@
 {% set name = "tweak" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1636397466a127d054db391bd594efdc10ce7fa5eee8607b89520f8906361f37
+  sha256: c444de0f0e48be80c052dfb5b0be0db70a5cedd6ef65f61a9bdee4b154302848
 
 build:
   number: 0
