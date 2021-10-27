@@ -1,17 +1,17 @@
 {% set name = "tweak" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c444de0f0e48be80c052dfb5b0be0db70a5cedd6ef65f61a9bdee4b154302848
+  sha256: 9a349a68122fd86eaf0400616cb7bf026feab666190ad6824c492a9d012d9a62
 
 build:
-  number: 2
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  number: 0
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -28,7 +28,7 @@ about:
   home: https://github.com/kislyuk/tweak
   license: Apache-2.0
   license_family: APACHE
-  license_file: LICENSE 
+  license_file: LICENSE
   summary: Application configuration engine
 
 extra:
